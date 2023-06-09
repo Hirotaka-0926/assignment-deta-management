@@ -1,7 +1,13 @@
 import java.util.Random;
+import java.util.Scanner;
 
 class Dice_game{
     public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("What is your name? ");
+        String name=sc.next();
+
+        System.out.println("Hello , "+name);
         Random rand = new Random();
         int sum;
         int Die1=rand.nextInt(6)+1;
